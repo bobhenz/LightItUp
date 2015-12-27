@@ -1,4 +1,4 @@
-package com.bobhenz.ambience;
+package com.bobhenz.lightitup;
 
 import android.app.Activity;
 import android.os.Bundle;

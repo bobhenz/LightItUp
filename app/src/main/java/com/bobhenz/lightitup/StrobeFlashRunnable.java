@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.bobhenz.ambience;
+package com.bobhenz.lightitup;
 
 
 import android.hardware.Camera;

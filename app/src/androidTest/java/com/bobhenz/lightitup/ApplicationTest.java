@@ -1,4 +1,4 @@
-package com.bobhenz.ambience;
+package com.bobhenz.lightitup;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
