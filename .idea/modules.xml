@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Ambience.iml" filepath="$PROJECT_DIR$/Ambience.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LightItUp.iml" filepath="$PROJECT_DIR$/LightItUp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
