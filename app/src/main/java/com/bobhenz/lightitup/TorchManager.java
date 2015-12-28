@@ -14,7 +14,11 @@ public class TorchManager {
     private Camera.Parameters camParamsLedOn;
     private Camera.Parameters camParamsLedOff;
 
-    TorchManager()
+    TorchManager() {
+        camera = null;
+    }
+
+    void Open()
     {
         camera = Camera.open();
 
