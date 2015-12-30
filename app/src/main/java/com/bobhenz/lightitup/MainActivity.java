@@ -14,9 +14,8 @@ public class MainActivity extends Activity {
     private class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onDoubleTap (MotionEvent event) {
+            mDisplayBrightnessManager.SetLevel(DisplayBrightnessManager.BrightnessLevel.DARK);
             mTorchManager.Toggle();
-            //getApplication().setTheme(R.style.Darkest);
-            //setContentView(R.layout.activity_main);
             return true;
         }
 
@@ -32,7 +31,6 @@ public class MainActivity extends Activity {
                     /* swipe from right to left */
                     mDisplayBrightnessManager.IncreaseLevel();
                 }
-                Log.d("swipe", "Horiz swipe detected: " + Float.toString(velocityX));
             }
             return true;
         }
@@ -41,17 +39,11 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setTheme(R.style.Darkest);
         setContentView(R.layout.activity_main);
         mTorchManager = new TorchManager();
-        mDisplayBrightnessManager = new DisplayBrightnessManager(getApplication());
+        mDisplayBrightnessManager = new DisplayBrightnessManager(getApplication(), this);
         mDetector = new GestureDetectorCompat(this, new MyGestureListener());
         mDisplayBrightnessManager.SetLevel(DisplayBrightnessManager.BrightnessLevel.DARK);
-        //StrobeFlashRunnable strobeFlashRunnable = StrobeFlashRunnable.getInstance();
-
-        //Thread thread = new Thread(strobeFlashRunnable);
-        //thread.start();
-
     }
 
     @Override

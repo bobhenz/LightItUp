@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dark_background" type="color">#000000</item>
+    <item name="dim_background" type="color">#a0a0a0</item>
+    <item name="bright_background" type="color">#ffffff</item>
+
+    <item name="dark_text" type="color">#808080</item>
+    <item name="dim_text" type="color">#404040</item>
+    <item name="bright_text" type="color">#a0a0a0</item>
+</resources>

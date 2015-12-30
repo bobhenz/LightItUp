@@ -1,9 +1,7 @@
 <resources>
     <style name="Darkest" parent="android:Theme.Black.NoTitleBar.Fullscreen">
-        <item name="android:textColor">#808080</item>
-    </style>
-    <style name="Dim" parent="android:Theme.Black.NoTitleBar.Fullscreen">
-        <item name="android:colorBackground">#808080</item>
-        <item name="android:textColor">#000000</item>
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:textColor">@color/dark_text</item>
     </style>
 </resources>
